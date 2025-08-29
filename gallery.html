@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подорожі - 8 Tourists</title>
+
+    <meta name="description" content="Відкрийте красу України через нашу галерею: природа, архітектура, люди та незабутні моменти наших подорожей.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/8_tourists_logo.png" alt="8 Tourists Logo" class="logo-img">
+                <h2><a href="index.html" style="color: inherit; text-decoration: none;">8 Tourists</a></h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Головна</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">Про нас</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#team" class="nav-link">Команда</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link active">Подорожі</a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#calendar" class="nav-link">Календар</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#booking" class="nav-link">Бронювання</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#reviews" class="nav-link">Відгуки</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Контакти</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+<section class="page-header" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/logotry.jpg'); background-size: cover; background-position: center 30%; background-repeat: no-repeat; min-height: 400px; padding: 120px 0 80px; text-align: center; color: white; position: relative;">        <div class="container">
+            <h1 class="page-title">Наші поїздки</h1>
+            <p class="page-subtitle">Відкрийте найкрасивіші місця України разом з нами</p>
+            <div class="social-links" style="margin-top: 20px; text-align: center; display: flex; justify-content: center;">
+                <a href="https://t.me/Smile_cv" target="_blank" class="social-link telegram">
+                    <i class="fab fa-telegram"></i> Зв'язатися з менеджером
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trips Section -->
+    <section class="trips-section">
+        <div class="container">
+            <!-- Filter Panel -->
+            <div class="filter-panel">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-globe"></i>
+                    Всі
+                </button>
+                <button class="filter-btn" data-filter="sniatina">
+                    <i class="fas fa-train"></i>
+                    Виїзд зі Снятина
+                </button>
+                <button class="filter-btn" data-filter="kolomii">
+                    <i class="fas fa-train"></i>
+                    Виїзд з Коломиї
+                </button>
+                <button class="filter-btn" data-filter="ivano-frankivsk">
+                    <i class="fas fa-train"></i>
+                    Виїзд з Івано-Франківська
+                </button>
+                <button class="filter-btn" data-filter="kizmania">
+                    <i class="fas fa-train"></i>
+                    Виїзд з Кіцманя
+                </button>
+                <button class="filter-btn" data-filter="zalishiki">
+                    <i class="fas fa-train"></i>
+                    Виїзд з Заліщиків
+                </button>
+                <button class="filter-btn" data-filter="kamianez">
+                    <i class="fas fa-train"></i>
+                    Виїзд із Кам'янця-Подільского
+                </button>
+                <button class="filter-btn" data-filter="yaremche">
+                    <i class="fas fa-train"></i>
+                    Виїзд із Яремче
+                </button>
+                <button class="filter-btn" data-filter="vorohti">
+
+                    <i class="fas fa-train"></i>
+                    Виїзд із Ворохти
+                </button>
+                <button class="filter-btn" data-filter="tatarova">
+                    <i class="fas fa-train"></i>
+                    Виїзд із Татарова
+                </button>
+                <button class="filter-btn" data-filter="kosova">
+                    <i class="fas fa-train"></i>
+                    Виїзд із Косова
+                </button>
+                <button class="filter-btn" data-filter="hikes">
+                    <i class="fas fa-hiking"></i>
+                    Походи
+                </button>
+                <button class="filter-btn" data-filter="hard-hikes">
+                    <i class="fas fa-mountain"></i>
+                    Складні походи
+                </button>
+                <button class="filter-btn" data-filter="travels">
+                    <i class="fas fa-route"></i>
+                    Легкі подорожі
+                </button>
+                <button class="filter-btn" data-filter="children">
+                    <i class="fas fa-child"></i>
+                    З дітьми
+                </button>
+                <button class="filter-btn" data-filter="lakes">
+                    <i class="fas fa-water"></i>
+                    Водоспади / озера
+                </button>
+                <button class="filter-btn" data-filter="mountains">
+                    <i class="fas fa-mountain"></i>
+                    Гори
+                </button>
+                <button class="filter-btn" data-filter="markets">
+                    <i class="fas fa-store"></i>
+                    Сувенірні ринки
+                </button>
+            </div>
+
+            <div class="trips-grid">
+                <!-- Синевир -->
+                <div class="trip-item" data-category="lakes travels children sniatina kolomii ivano-frankivsk">
+                    <div class="trip-image">
+                        <img src="images/ozeroSinevir.jpg" alt="озеро Синевир" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" loading="lazy">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>озеро Синевир</h3>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='sinevir.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="lakes travels children sniatina kolomii ivano-frankivsk">
+                    <div class="trip-image">
+                        <img src="images/vodospadShipit.jpg" alt="озеро Синевир + водоспад Шипіт" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" loading="lazy">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>озеро Синевир</h3>
+                                <p>+ водоспад Шипіт</p>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='sinevir-shipit.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Тустань -->
+                <div class="trip-item" data-category="mountains travels children sniatina kolomii ivano-frankivsk">
+                    <div class="trip-image">
+                        <img src="images/tustan.JPG" alt="Тустань" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" loading="lazy">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Тустань</h3>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='tustan.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="mountains travels children sniatina kolomii ivano-frankivsk">
+
+                    <div class="trip-image">
+                        <img src="images/dovbush.JPG" alt="Довбуша" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" loading="lazy">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Довбуша</h3>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='dovbusha.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="travels children kizmania zalishiki">
+                    <div class="trip-image">
+                        <img src="images/tarankivskijfort.jpg" alt="Тараканівський форт + Дубенський та Кременецький замки" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" loading="lazy">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Тараканівський форт</h3>
+                                <p>+ Дубенський та Кременецький замки</p>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='tarankivskijfort.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="markets travels children sniatina kolomii">
+                    <div class="trip-image">
+                        <img src="images/kosivbazar.jpg" alt="Косівський базар + Шешорські водоспади" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" loading="lazy">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Косівський базар</h3>
+                                <p>+ Шешорські водоспади</p>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='kosivskijbazar.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="lakes travels children kamianez">
+                    <div class="trip-image">
+                        <img src="images/burbun.JPG" alt="озеро Бакота + водоспади" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" loading="lazy">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Водоспад Бурбун</h3>
+                                <p>+ бакота</p>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='bakotavodospadi.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="lakes travels children kamianez">
+                    <div class="trip-image">
+                        <img src="images/bakota.jpg" alt="озеро Бакота + час на пляжі" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" loading="lazy">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Бакота</h3>
+                                <p>+ час на пляжі</p>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='bakotanapliazi.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="travels children kamianez">
+                    <div class="trip-image">
+                        <img src="images/maliivzi.jpg" alt="Маліївці" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" loading="lazy">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Маліївці</h3>
+                                <p>палац, парк, водоспад</p>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='maliivzi.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="mountains hikes sniatina kolomii yaremche vorohti">
+                    <div class="trip-image">
+                        <div class="placeholder-image petros-placeholder">
+                            <img src="images/shpizi.jpg" alt="Шпиці" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" loading="lazy">
+                        </div>
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Шпиці</h3>
+                                <p>+ озеро Несамовите</p>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='shpizi-nesamovite.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Говерла -->
+                <div class="trip-item" data-category="mountains hikes sniatina kolomii yaremche vorohti">
+                    <div class="trip-image">
+                        <img src="images/goverla.jpg" alt="Говерла" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" loading="lazy">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Говерла</h3>
+                                <p>+ Говерлянський водоспад</p>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='goverla.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="mountains hard-hikes sniatina kolomii yaremche tatarova">
+                    <div class="trip-image">
+                        <div class="placeholder-image hoverla-placeholder">
+                            <img src="images/petros.jpg" alt="Петрос" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" loading="lazy">
+                        </div>
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Петрос</h3>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='petros.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="mountains hikes sniatina kolomii kosova">
+                    <div class="trip-image">
+                        <img src="images/kostrich.jpg" alt="Кострич" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Кострич</h3>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='kostrich.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="mountains hikes sniatina kolomii yaremche vorohti">
+                    <div class="trip-image">
+                        <img src="images/kukul.jpg" alt="Кукул" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Кукул</h3>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='kukul.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="hikes children sniatina kolomii yaremche">
+                    <div class="trip-image">
+                        <img src="images/kostel.JPG" alt="Костел + Чемегівський каньйон" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Костел</h3>
+                                <p>+ Чемегівський каньйон</p>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='kostel.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="mountains hikes sniatina kolomii kosova">
+                    <div class="trip-image">
+                        <img src="images/rotilo.jpg" alt="Ротило" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Ротило</h3>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='rotilo.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="mountains hard-hikes sniatina kolomii yaremche">
+                    <div class="trip-image">
+                        <img src="images/yavirnik.jpg" alt="Явірник" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Явірник</h3>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='yavirnik.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="mountains hikes sniatina kolomii yaremche">
+                    <div class="trip-image">
+                        <img src="images/homiak.jpg" alt="Хомяк" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Хомяк</h3>
+                                <p> + Женецький Гук</p>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='homiak.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="mountains hard-hikes sniatina kolomii yaremche tatarova">
+                    <div class="trip-image">
+                        <img src="images/sinak.JPG" alt="Синяк" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Синяк</h3>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='sinak.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="lakes hard-hikes sniatina kolomii yaremche vorohti">
+                    <div class="trip-image">
+                        <div class="placeholder-image hoverla-placeholder">
+                            <img src="images/brebeneskul.jpg" alt="Бребенескул озеро" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                        </div>
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Бребенескул озеро</h3>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='brebeneskul.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="mountains hikes sniatina kolomii kosova">
+                    <div class="trip-image">
+                        <img src="images/pisankamin.jpg" alt="Писаний камінь" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Писаний камінь</h3>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='pisanijkamin.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="mountains hikes children">
+                    <div class="trip-image">
+                        <img src="images/ternoshlada.jpg" alt="Терношорська Лада" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Терношорська Лада</h3>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='ternoshorskalada.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="mountains hikes">
+                    <div class="trip-image">
+                        <img src="images/kinashki.JPG" alt="Скелі Кінашки" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Скелі Кінашки</h3>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='kinashki.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="lakes hikes children">
+                    <div class="trip-image">
+                        <img src="images/bukovinskivodospad.jpg" alt="Буковинські водоспади" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Буковинські водоспади</h3>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='bukovinskivodospad.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="lakes hikes children sniatina kolomii ivano-frankivsk">
+                    <div class="trip-image">
+                        <img src="images/rosohan.jpg" alt="Росохан" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Росохан</h3>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='rosohan.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="lakes hikes sniatina kolomii ivano-frankivsk">
+                    <div class="trip-image">
+                        <div class="placeholder-image hoverla-placeholder">
+                            <img src="images/maniavavodospad.JPG" alt="Манява" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                        </div>
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Манявський водоспад</h3>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='maniava.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="lakes hikes sniatina kolomii">
+                    <div class="trip-image">
+                        <img src="images/maniabuh.jpg" alt="Манява Бухтівець похід" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Похід водоспадами</h3>
+                            </div>
+                            <button class="trip-btn" onclick="window.location.href='maniavabuhtivez.html'">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-item" data-category="lakes hikes children sniatina kolomii">
+                    <div class="trip-image">
+                        <img src="images/buhtiveznalaiti.jpg" alt="Бухтівець на лайті" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                        <div class="trip-overlay">
+                            <div class="trip-info">
+                                <h3>Бухтівець</h3>
+                                <p>на лайті</p>
+                            </div>
+                            <a href="buhtiveznalajti.html" class="trip-btn">
+                                <i class="fas fa-arrow-right"></i>
+                                Детальніше
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Instagram CTA -->
+    <section class="instagram-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Слідкуйте за нами в Instagram</h2>
+                <p>Не пропустіть наші останні оновлення, спеціальні події та неймовірні пейзажі України</p>
+                <a href="https://instagram.com/8_tourists" target="_blank" class="btn btn-primary instagram-btn">
+                    <i class="fab fa-instagram"></i>
+                    @8tourists
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="lightbox-image">
+                <div class="lightbox-placeholder" id="lightboxImage">
+                    <!-- Image will be populated by JavaScript -->
+                </div>
+            </div>
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle">Заголовок</h3>
+                <p id="lightboxDescription">Опис</p>
+            </div>
+        </div>
+    </div>
+
+        <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>8 Tourists</h3>
+                    <p>Ваш провідник у світ незабутніх подорожей Україною</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Контакти</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@8tourists.ua</p>
+                        <p><i class="fab fa-telegram"></i> <a href="https://t.me/Travel_8tourists" target="_blank" class="telegram-link">@Travel_8tourists</a></p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Міста відправлення</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Чернівці</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Снятин</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Коломия</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Івано-Франківськ</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Популярні напрямки</h3>
+                    <ul>
+                        <li>Говерла</li>
+                        <li>Синевир</li>
+                        <li>Кам'янець-Подільський</li>
+                        <li>Бакота</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-social-links">
+                <a href="https://t.me/Travel_8tourists" target="_blank" class="footer-social-btn">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://instagram.com/8_tourists" target="_blank" class="footer-social-btn">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com/8tourists" target="_blank" class="footer-social-btn">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 8 Tourists. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+<style>
+.page-header {
+    padding: 120px 0 80px;
+    text-align: center;
+    background: linear-gradient(135deg, #2c5530 0%, #1a3a1e 100%);
+    color: white;
+}
+
+.page-title {
+    font-size: 3rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: #e8f5e8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.gallery-filter {
+    background: #1a1a1a;
+    padding: 30px 0;
+    position: sticky;
+    top: 68px; /* Изменено с 80px на 70px */
+    z-index: 100;
+    transition: transform 0.3s ease;
+    transform: translateY(0);
+}
+
+.gallery-filter.filter-hidden {
+    transform: translateY(-100%);
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 2px solid rgba(76, 175, 80, 0.3);
+    color: #cccccc;
+    padding: 12px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #4CAF50;
+    color: #ffffff;
+    border-color: #4CAF50;
+    transform: translateY(-2px);
+}
+
+.gallery-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.gallery-item {
+    position: relative;
+    aspect-ratio: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transform: scale(1);
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px) scale(1);
+    box-shadow: 0 15px 35px rgba(76, 175, 80, 0.2);
+}
+
+.gallery-item.filtering {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-image-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.placeholder-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.8);
+    position: relative;
+}
+
+.nature-placeholder {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+}
+
+.architecture-placeholder {
+    background: linear-gradient(135deg, #FF9800, #F57C00);
+}
+
+.people-placeholder {
+    background: linear-gradient(135deg, #2196F3, #1976D2);
+}
+
+.events-placeholder {
+    background: linear-gradient(135deg, #9C27B0, #7B1FA2);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    color: white;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+.gallery-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.gallery-info p {
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+.gallery-btn {
+    background: rgba(76, 175, 80, 0.8);
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-btn:hover {
+    background: #4CAF50;
+    transform: scale(1.1);
+}
+
+.instagram-cta {
+    background: linear-gradient(135deg, #2c5530 0%, #1a3a1e 100%);
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #e8f5e8;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instagram-btn {
+    background: linear-gradient(45deg, #4CAF50, #2E7D32);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.instagram-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(76, 175, 80, 0.3);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.lightbox-close:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox-image {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    background: #f5f5f5;
+    color: #999;
+}
+
+.lightbox-info {
+    padding: 20px;
+    background: white;
+}
+
+.lightbox-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.lightbox-info p {
+    color: #666;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .filter-buttons {
+        gap: 10px;
+    }
+
+    .filter-btn {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+
+    .lightbox-content {
+        max-width: 95%;
+        max-height: 95%;
+    }
+
+    .lightbox-image {
+        width: 100%;
+        height: 300px;
+    }
+}
+</style>
+
+<script>
+// Ждем полной загрузки DOM
+document.addEventListener('DOMContentLoaded', function() {
+    // Gallery Filters
+    const galleryFilters = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    if (galleryFilters.length > 0) {
+        galleryFilters.forEach(filter => {
+            filter.addEventListener('click', () => {
+                const category = filter.getAttribute('data-filter');
+
+                // Remove active class from all filters
+                galleryFilters.forEach(f => f.classList.remove('active'));
+                filter.classList.add('active');
+
+                // Filter gallery items with fade effect
+                galleryItems.forEach(item => {
+                    item.classList.add('filtering');
+
+                    if (category === 'all' || item.getAttribute('data-category') === category) {
+                        // Show item
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                            item.classList.remove('filtering');
+                        }, 10);
+                    } else {
+                        // Hide item
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                            item.classList.remove('filtering');
+                        }, 300);
+                    }
+                });
+            });
+        });
+    }
+
+    // Close lightbox on background click
+    const lightbox = document.getElementById('lightbox');
+    if (lightbox) {
+        lightbox.addEventListener('click', (e) => {
+            if (e.target.id === 'lightbox') {
+                closeLightbox();
+            }
+        });
+    }
+
+    // Navigation toggle for mobile
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+    }
+});
+
+// Lightbox functionality
+function openLightbox(button) {
+    const galleryItem = button.closest('.gallery-item');
+    const title = galleryItem.querySelector('.gallery-info h3').textContent;
+    const description = galleryItem.querySelector('.gallery-info p').textContent;
+    const category = galleryItem.getAttribute('data-category');
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxTitle = document.getElementById('lightboxTitle');
+    const lightboxDescription = document.getElementById('lightboxDescription');
+    const lightboxImage = document.getElementById('lightboxImage');
+
+    // Set content
+    lightboxTitle.textContent = title;
+    lightboxDescription.textContent = description;
+
+    // Set placeholder based on category
+    let placeholderClass = 'nature-placeholder';
+    let icon = 'fas fa-mountain';
+
+    switch(category) {
+        case 'architecture':
+            placeholderClass = 'architecture-placeholder';
+            icon = 'fas fa-building';
+            break;
+        case 'people':
+            placeholderClass = 'people-placeholder';
+            icon = 'fas fa-users';
+            break;
+        case 'events':
+            placeholderClass = 'events-placeholder';
+            icon = 'fas fa-calendar-alt';
+            break;
+    }
+
+    lightboxImage.className = `lightbox-placeholder ${placeholderClass}`;
+    lightboxImage.innerHTML = `<i class="${icon}"></i>`;
+
+    // Show lightbox
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+    const lightbox = document.getElementById('lightbox');
+    if (lightbox.classList.contains('active')) {
+        if (e.key === 'Escape') {
+            closeLightbox();
+        }
+    }
+});

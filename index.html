@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>8 Tourists - Подорожі Українськими Карпатами</title>
+
+  <!-- SEO -->
+  <meta name="description" content="8 Tourists - організація незабутніх подорожей Українськими Карпатами. Походи на Говерлу, Петрос, Шпиці, озеро Синевир, водоспади та гірські маршрути.">
+  <meta name="keywords" content="подорожі Карпати, походи Україна, Говерла, Петрос, Шпиці, озеро Синевир, туризм Карпати, гірські походи, водоспади України, екскурсії Карпати, активний відпочинок, 8 Tourists">
+  <meta name="author" content="8 Tourists">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="language" content="Ukrainian">
+  <meta name="geo.region" content="UA">
+  <meta name="geo.placename" content="Україна, Карпати">
+  <meta name="google-site-verification" content="cMOzv8C1DttmOz3TRQj6o_Pd0JfYDCvzHlxtWIoW0YU" />
+  <meta name="theme-color" content="#2c5530">
+  <meta name="msapplication-TileColor" content="#2c5530">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="8 Tourists">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/8_tourists_logo.png">
+  <link rel="apple-touch-icon" href="images/8_tourists_logo.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="8 Tourists - Подорожі Українськими Карпатами">
+  <meta property="og:description" content="Організація незабутніх подорожей Українськими Карпатами.">
+  <meta property="og:image" content="https://8-tourists.vercel.app/images/logotry.jpg">
+  <meta property="og:url" content="https://8-tourists.vercel.app/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="8 Tourists - Подорожі Українськими Карпатами">
+  <meta name="twitter:description" content="Організація незабутніх подорожей Українськими Карпатами">
+  <meta name="twitter:image" content="https://8-tourists.vercel.app/images/logotry.jpg">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://8-tourists-new.vercel.app/">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "8 Tourists",
+    "description": "Організація незабутніх подорожей Українськими Карпатами",
+    "url": "https://8-tourists-new.vercel.app/",
+    "logo": "https://8-tourists-new.vercel.app/images/8_tourists_logo.png",
+    "image": "https://8-tourists-new.vercel.app/images/logotry.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "UA",
+      "addressRegion": "Карпати"
+    },
+    "areaServed": "Україна",
+    "serviceType": ["Гірські походи", "Екскурсії", "Туризм", "Активний відпочинок"],
+    "offers": {
+      "@type": "Offer",
+      "description": "Походи на Говерлу, Петрос, Шпиці, озеро Синевир та інші локації Карпат"
+    }
+  }
+  </script>
+
+  <!-- Стили и шрифты -->
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/8_tourists_logo.png" alt="8 Tourists Logo" class="logo-img">
+                <h2><a href="index.html" style="color: inherit; text-decoration: none;">8 Tourists</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Головна</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Про нас</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#team" class="nav-link">Команда</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Подорожі</a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="#calendar" class="nav-link">Календар</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#booking" class="nav-link">Бронювання</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#reviews" class="nav-link">Відгуки</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Контакти</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Відкрийте красу України разом з нами</h1>
+            <p>Незабутні подорожі Карпатами, замками та найкрасивішими місцями України</p>
+            <div class="hero-buttons">
+                <a href="gallery.html" class="cta-button">Наші подорожі</a>
+                <a href="#booking" class="cta-button">Забронювати подорож</a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Про нашу організацію</h2>
+                <p>Ми створюємо незабутні пригоди в серці України</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Хто ми?</h3>
+                    <p>"8 Tourists" - це команда професіоналів, які організовують піші походи в гори невеликими групами, одноденні поїздки та екскурсії найкрасивішими місцями України.</p>
+                    
+                    <h3>Наші послуги:</h3>
+                    <ul>
+                        <li><i class="fas fa-mountain"></i> Піші походи в Карпати</li>
+                        <li><i class="fas fa-calendar-day"></i> Одноденні екскурсії</li>
+                        <li><i class="fas fa-monument"></i> Відвідування замків та історичних місць</li>
+                        <li><i class="fas fa-camera"></i> Фотосесії в мальовничих локаціях</li>
+                    </ul>
+
+                    <h3>Чому з нами?</h3>
+                    <ul>
+                        <li><i class="fas fa-mountain"></i> понад 20 років досвіду походів в гори Карпати та за кордоном</li>
+                        <li><i class="fas fa-route"></i> досвід організація власних та групових подорожей Україною та за кордон</li>
+                        <li><i class="fas fa-user-md"></i> наш керівник - практикуючий психолог</li>
+                        <li><i class="fas fa-hiking"></i> наші гіди - обїздили усі маршрути спочатку як туристи</li>
+                    </ul>
+                    
+                    <h3>Відправлення:</h3>
+                    <p>Наші подорожі стартують з міста <strong>Чернівці</strong>. Також можна приєднатися з міст: <strong>Снятин</strong>, <strong>Коломия</strong>, <strong>Івано-Франківськ</strong> залежно від маршруту. Якщо ви з <strong>інших міст</strong> - ми допоможемо як з ваших міст приєднатись до нас потягом. 
+                        Ми гарантуємо дружню атмосферу, безпеку та професійну організацію кожної поїздки.</p>
+                    
+                    <div class="social-links">
+                        <a href="https://t.me/Travel_8tourists" target="_blank" class="social-link telegram">
+                            <i class="fab fa-telegram"></i> Telegram
+                        </a>
+                        <a href="https://instagram.com/8_tourists" target="_blank" class="social-link instagram">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/inmountainwithlogo.jpg" alt="Група туристів в горах">
+                    <img src="images/inmountainswithlogo3.jpg" alt="Група туристів в горах">
+                    <img src="images/inmountainswithlogo2.jpg" alt="Група туристів в горах">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>Наша команда</h2>
+                <p>Професійні гіди та організатори з великим досвідом</p>
+            </div>
+            <div class="team-content">
+                <p class="team-intro">
+                    Наша команда складається з досвідчених гідів та організаторів, які поділяють спільну любов до природи та подорожей. 
+                    Кожен член нашої з команди має багаторічний досвід у сфері туризму, знає найкрасивіші та найбезпечніші маршрути, 
+                    а також вміє створити незабутню атмосферу для кожної групи.
+                </p>
+                
+                <div class="team-features">
+                    <div class="feature">
+                        <i class="fas fa-certificate"></i>
+                        <h3>Професіоналізм</h3>
+                        <p>Сертифіковані гіди з багаторічним досвідом</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-heart"></i>
+                        <h3>Любов до природи</h3>
+                        <p>Ми знаємо та любимо кожен куточок України</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Безпека</h3>
+                        <p>Ваша безпека - наш головний пріоритет</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <h3>Дружня атмосфера</h3>
+                        <p>Створюємо теплу та дружню атмосферу в кожній групі</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Calendar Section -->
+    <section id="calendar" class="calendar-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Календар подорожей</h2>
+                <p>Оберіть дату для перегляду доступних подорожей</p>
+            </div>
+            
+            <!-- Calendar Navigation -->
+            <div class="calendar-navigation">
+                <button id="prevMonth" class="nav-btn">&lt;</button>
+                <h3 id="currentMonth"></h3>
+                <button id="nextMonth" class="nav-btn">&gt;</button>
+            </div>
+            
+            <!-- Calendar Content -->
+            <div class="calendar-content">
+                <!-- Calendar Grid -->
+                <div class="calendar-container">
+                    <div class="calendar-grid">
+                        <div class="weekdays">
+                            <div>Пн</div>
+                            <div>Вт</div>
+                            <div>Ср</div>
+                            <div>Чт</div>
+                            <div>Пт</div>
+                            <div>Сб</div>
+                            <div>Нд</div>
+                        </div>
+                        <div id="calendarDays" class="days"></div>
+                    </div>
+                </div>
+                
+                <!-- Right Column: Legend and Trip Details -->
+                <div class="calendar-right-column">
+                    <!-- Calendar Legend -->
+                    <div class="calendar-legend">
+                        <h4>Легенда:</h4>
+                        <div class="legend-items">
+                            <div class="legend-item">
+                                <span class="legend-color available"></span>
+                                <span>Доступно для бронювання</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color booked"></span>
+                                <span>Заброньовано</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color traveling"></span>
+                                <span>У подорожі</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Trip Details -->
+                    <div class="trip-details">
+                        <h4>Інформація про подорож:</h4>
+                        <div id="tripDetails">Оберіть дату для перегляду деталей</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <div class="section-header">
+                <h2>Бронювання подорожі</h2>
+                <p>Заповніть форму і ми зв'яжемося з вами</p>
+            </div>
+            <div class="booking-content">
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-group">
+                        <label for="name">Ім'я та прізвище *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Номер телефону *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="trip">Оберіть подорож *</label>
+                        <select id="trip" name="trip" required>
+                            <option value="">Оберіть подорож</option>
+                            <option value="bakotanapliazi">Бакота + час на пляжі</option>
+                            <option value="bakotavodospadi">Бакота + водоспади</option>
+                            <option value="brebeneskul">Бребенескул</option>
+                            <option value="buhtiveznalajti">Бухтівець на лайті</option>
+                            <option value="bukovinskivodospad">Буковинські водоспади</option>
+                            <option value="dovbusha">Довбуша</option>
+                            <option value="goverla">Говерла</option>
+                            <option value="homiak">Хомяк</option>
+                            <option value="kinashki">Кінашки</option>
+                            <option value="kosivskijbazar">Косівський базар</option>
+                            <option value="kostel">Костел</option>
+                            <option value="kostrich">Кострич</option>
+                            <option value="kukul">Кукул</option>
+                            <option value="maliivzi">Маліївці</option>
+                            <option value="maniava">Манява</option>
+                            <option value="maniavabuhtivez">Манява + Бухтівець на лайті</option>
+                            <option value="petros">Петрос</option>
+                            <option value="pisanijkamin">Писаний камінь</option>
+                            <option value="rosohan">Росохан</option>
+                            <option value="rotilo">Ротило</option>
+                            <option value="shpizi">Шпиці</option>
+                            <option value="sinak">Синяк</option>
+                            <option value="sinevir">Синевир</option>
+                            <option value="sinevir-shipit">Синевир + Шипіт</option>
+                            <option value="tarankivskijfort">Таранківський форт</option>
+                            <option value="ternoshorskalada">Терношорська лада</option>
+                            <option value="tustan">Тустан</option>
+                            <option value="yavirnik">Явірник</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="participants">Кількість учасників</label>
+                        <input type="number" id="participants" name="participants" min="1" max="10" value="1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="comments">Коментарі або побажання</label>
+                        <textarea id="comments" name="comments" rows="4" placeholder="Розкажіть про ваші побажання або особливі потреби..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Відправити заявку
+                    </button>
+                </form>
+                
+                <div class="booking-info">
+                    <h3>Що включено в ціну:</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Транспорт</li>
+                        <li><i class="fas fa-check"></i> Професійний гід</li>
+                        <li><i class="fas fa-check"></i> Консультація з приводу необхідного спорядження / речей</li>
+                        <li><i class="fas fa-check"></i> Вхідні квитки детальніше є в описі подорожах</li>
+                    </ul>
+                    
+                    <h3>Що взяти з собою:</h3>
+                    <ul>
+                        <li><i class="fas fa-hiking"></i> Зручне взуття</li>
+                        <li><i class="fas fa-tshirt"></i> Спортивний одяг</li>
+                        <li><i class="fas fa-umbrella"></i> Дощовик / соняшні окуляри</li>
+                        <li><i class="fas fa-water"></i> Воду та перекус</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>Відгуки наших клієнтів</h2>
+                <p>Що кажуть про нас наші мандрівники</p>
+            </div>
+            <div class="reviews-content">
+                <div class="review-card">
+                    <img src="images/vidguk2.jpg" alt="Відгук клієнта 1" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                </div>
+                
+                <div class="review-card">
+                    <img src="images/vidguk1.jpg" alt="Відгук клієнта 2" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                </div>
+                
+                <div class="review-card">
+                    <img src="images/vidguk3.jpg" alt="Відгук клієнта 3" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                </div>
+            </div>
+            
+            <div class="reviews-stats">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Задоволених клієнтів</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4.9</span>
+                    <span class="stat-label">Середня оцінка</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">Рекомендують друзям</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>FAQ</h2>
+                <p>Відповіді на найпоширеніші питання про наші подорожі</p>
+            </div>
+            <div class="faq-content">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>СТАРТ ТА ПОСАДКА 🚌</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Основна точка старту Стадіон Буковина.
+                        Далі забираємо учасників у:<br> •центрі міста <br>
+                        •біля залізничного вокзалу <br>
+                        •на дріжджзаводі <br>
+                        •і далі за маршрутом <br>
+                        Якщо маршрут на Бакоту - тільки Стадіон Буковина + Гравітон</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>ВХІДНІ КВИТКИ 🎫</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Вартість входу в заповідні зони, КПП, парки - заздалегідь повідомляється.<br><br> Найчастіше - вхід уже включено у вартість (наприклад: 1600 грн, з них 100 грн - вхід). <br><br>
+                            Деякі локації є факультативами, тобто за бажанням відвідування - ціна вказується окремо в описі подорожі.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>ЗАПІЗНЕННЯ ТА РАННІ ВИЇЗДИ 🕒</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Виїжджаємо рано, щоби мати запас часу на форс-мажори та встигнути до комендантської години. <br><br>
+
+                            Краще раніше бути вдома, ніж потрапити в халепу. ☺️
+
+                            ⚠️ Поспіх можливий, якщо: <br><br>
+
+                            •хтось не дотримується таймінгу <br>
+                            •очікується погіршення погоди <br>
+                            •інші не очікувані обставини <br><br>
+
+                            Коли група невелика таких ситуацій менше, і більше часу на відпочинок <br><br>
+
+                            Про всі зміни гід повідомляє одразу та пояснює причину.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>ПОВІТРЯНА ТРИВОГА</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>У разі повітряної тривоги виїзд переноситься на час після відбою. <br><br>
+                            Група зазвичай збирається за ~40 хв після сигналу.<br><br>
+                            Гід та керівник залишаються на зв'язку (за можливості), адже в деяких сховищах немає зв'язку. <br><br>
+                            Одразу після відбою повідомляємо час збору на старті та уточнюємо, чи всі встигають.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>ТРАНСПОРТ: ЩО ВАРТО ЗНАТИ 🚞</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Автобус, бус - "спринтер" на 17-18 місць. В нас автобуси НЕ маршрутки. <br><br>
+                            Є місця біля водія, і є місця з окремого входу для пасажирів. <br><br>
+                            Місця не бронюються займаються при посадці. <br><br>
+                            Для тих, кого захитує або хто з дітьми -віддаємо передні місця. <br><br>
+                            Клімат-контролю немає, але є вентилятори, люки, підігрів.<br><br>
+                            Є багажник для рюкзаків та речей.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>ЗУПИНКИ В ДОРОЗІ 🛑</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Зупинки обов'язкові зазвичай раз на 1,5-2 години. <br><br>
+                            Стараємосьobiaти заправки, де є кілька туалетів, і так щоб це було +- середина дороги. <br><br>
+                            Дорогою назад також обов'язкова зупинка (кафе або заправка з туалетом). <br><br>
+                            Навіть у випадку затримки на спуску -коротку зупинку робимо обов'язково.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>ДЛЯ КОГО ПІДІЙДЕ ІНДИВІДУАЛЬНИЙ ПОХІД? 🌲</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>  •Для компанії від 2х осіб зі своїм транспортом <br>
+                             •Для компаній від 8ми осіб без власного транспорту <br><br>
+                             ЩО З НАС: <br>
+
+                             •Підбір маршруту <br>
+                             •Організація логістики<br>
+                             •Супровід гіда на Ваш вибір<br>
+                             •Консультації щодо необхідного спорядження та деталей маршруту</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>ПЕРЕВАГИ НАШИХ ТУРІВ:</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>•Виїзд з центру Чернівців зранку <br>
+                            •Повернення до комендантської години, назад у центр<br>
+                            •Музика, тепло взимку і прохолода влітку (пічка/кондиціонер), місце для ніг та багажу — все включено!<br>
+                            •Зупинки на каву та в туалет кожні 1-1,5 години<br>
+                            •Привозимо прямо під підьйом, забираємо незалежно, наскільки ви в болоті чи мокрі після дощу -наш бус приймає всіх!</p>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>8 Tourists</h3>
+                    <p>Ваш провідник у світ незабутніх подорожей Україною</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Контакти</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@8tourists.ua</p>
+                        <p><i class="fab fa-telegram"></i> <a href="https://t.me/Travel_8tourists" target="_blank" class="telegram-link">@Travel_8tourists</a></p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Міста відправлення</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Чернівці</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Снятин</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Коломия</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Івано-Франківськ</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Популярні напрямки</h3>
+                    <ul>
+                        <li>Говерла</li>
+                        <li>Синевир</li>
+                        <li>Кам'янець-Подільський</li>
+                        <li>Бакота</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-social-links">
+                <a href="https://t.me/Travel_8tourists" target="_blank" class="footer-social-btn">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://instagram.com/8_tourists" target="_blank" class="footer-social-btn">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com/8tourists" target="_blank" class="footer-social-btn">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 8 Tourists. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
